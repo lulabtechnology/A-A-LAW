@@ -460,7 +460,7 @@ export default function HomePage() {
       <footer className="border-t border-brand-pearl/60 bg-white">
         <div className="site-container flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
-            <div className="relative h-12 w-28">
+            <div className="relative h-12 w-40">
               <Image src="/brand/logo-navy.png" alt="A&A Law Firm" fill className="object-contain object-left" />
             </div>
             <p className="text-sm leading-6 text-brand-slate">

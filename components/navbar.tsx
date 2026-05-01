@@ -34,7 +34,7 @@ export function Navbar() {
             : "border-white/10 bg-brand-navy/20 backdrop-blur-md"
         }`}
       >
-        <Link href="#inicio" className="relative h-10 w-28 shrink-0 sm:h-12 sm:w-32">
+        <Link href="#inicio" className="relative h-11 w-36 shrink-0 sm:h-12 sm:w-44">
           <Image
             src={scrolled ? "/brand/logo-navy.png" : "/brand/logo-gold.png"}
             alt="A&A Law Firm"

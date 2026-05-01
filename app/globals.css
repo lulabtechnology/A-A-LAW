@@ -5,6 +5,8 @@
 :root {
   --background: #f5f2ee;
   --foreground: #283849;
+  --font-heading: "Cormorant Garamond", "Garamond", "Baskerville", "Times New Roman", serif;
+  --font-body: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
