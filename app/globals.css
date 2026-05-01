@@ -35,6 +35,29 @@ textarea {
   max-width: 100%;
 }
 
+#__next,
+main {
+  width: 100%;
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+a,
+span {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 380px) {
+  .site-container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
 ::selection {
   background: rgba(203, 170, 139, 0.38);
   color: #283849;
@@ -51,7 +74,7 @@ textarea {
 
 @layer components {
   .site-container {
-    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto w-full max-w-7xl px-3 sm:px-6 lg:px-8;
   }
 
   .section-padding {
@@ -59,11 +82,11 @@ textarea {
   }
 
   .eyebrow {
-    @apply inline-flex max-w-full items-center gap-2 rounded-full border border-brand-gold/25 bg-white/75 px-4 py-2 text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-brand-slate backdrop-blur sm:text-xs;
+    @apply inline-flex max-w-full items-center gap-2 rounded-full border border-brand-gold/25 bg-white/75 px-3.5 py-2 text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-brand-slate backdrop-blur sm:px-4 sm:text-xs sm:tracking-[0.22em];
   }
 
   .section-title {
-    @apply font-serif text-3xl leading-[1.08] text-brand-navy sm:text-4xl lg:text-5xl;
+    @apply font-serif text-[2rem] leading-[1.08] text-brand-navy sm:text-4xl lg:text-5xl;
   }
 
   .body-copy {

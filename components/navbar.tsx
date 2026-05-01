@@ -10,7 +10,7 @@ const links = [
   { href: "#servicios", label: "Servicios" },
   { href: "#diferenciales", label: "Diferenciales" },
   { href: "#proceso", label: "Proceso" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#faq", label: "Preguntas" },
   { href: "#contacto", label: "Contacto" }
 ];
 
@@ -26,7 +26,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 lg:px-8">
+    <header className="fixed inset-x-0 top-0 z-50 px-2.5 pt-2.5 sm:px-6 sm:pt-4 lg:px-8">
       <div
         className={`mx-auto flex max-w-7xl items-center justify-between rounded-full border px-3 py-2.5 transition-all duration-300 sm:px-5 sm:py-3 ${
           scrolled
@@ -34,7 +34,7 @@ export function Navbar() {
             : "border-white/10 bg-brand-navy/30 backdrop-blur-md"
         }`}
       >
-        <Link href="#inicio" className="relative h-10 w-32 shrink-0 sm:h-12 sm:w-44">
+        <Link href="#inicio" className="relative h-9 w-32 shrink-0 sm:h-12 sm:w-44">
           <Image
             src={scrolled ? "/brand/logo-navy.png" : "/brand/logo-gold.png"}
             alt="A&A Law Firm"
@@ -73,7 +73,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className={`inline-flex h-10 w-10 items-center justify-center rounded-full lg:hidden ${
+          className={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full lg:hidden ${
             scrolled ? "bg-brand-navy text-white" : "bg-white/10 text-white"
           }`}
           onClick={() => setOpen((value) => !value)}

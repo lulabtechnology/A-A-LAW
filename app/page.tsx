@@ -111,7 +111,7 @@ export default function HomePage() {
                 <span className="eyebrow border-white/15 bg-white/10 text-brand-pearl">
                   Firma legal en Panamá
                 </span>
-                <h1 className="mt-5 max-w-4xl font-serif text-[2.35rem] leading-[1.02] sm:text-5xl md:text-6xl lg:text-7xl">
+                <h1 className="mt-5 max-w-4xl font-serif text-[2.05rem] leading-[1.04] min-[390px]:text-[2.35rem] sm:text-5xl md:text-6xl lg:text-7xl">
                   {site.heroTitle}
                 </h1>
                 <p className="mt-5 max-w-2xl text-base leading-7 text-white/85 sm:text-lg md:text-xl md:leading-8">
@@ -297,7 +297,7 @@ export default function HomePage() {
                       {service.title}
                     </h3>
                     <p className="mt-4 text-sm leading-7 text-brand-slate">{service.description}</p>
-                    <ul className="mt-5 space-y-3">
+                    <ul className="mt-5 grow space-y-3">
                       {service.bullets.map((bullet) => (
                         <li key={bullet} className="flex gap-3 text-sm leading-6 text-brand-navy">
                           <span className="mt-[0.45rem] h-2 w-2 shrink-0 rounded-full bg-brand-gold" />
@@ -309,7 +309,7 @@ export default function HomePage() {
                       href={getServiceHref(service.title)}
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-6 inline-flex w-fit items-center gap-2 rounded-full border border-brand-gold/40 px-4 py-2.5 text-sm font-semibold text-brand-navy transition hover:bg-brand-gold/15"
+                      className="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-brand-gold/40 px-4 py-2.5 text-sm font-semibold text-brand-navy transition hover:bg-brand-gold/15"
                     >
                       Consultar este servicio <ArrowRight size={15} />
                     </Link>
@@ -456,20 +456,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="contacto" className="section-padding pb-20">
+      <section id="contacto" className="section-padding pb-16 sm:pb-20">
         <div className="site-container">
           <AnimatedSection>
-            <div className="overflow-hidden rounded-[28px] bg-brand-navy shadow-glow lg:grid lg:grid-cols-[0.92fr_1.08fr] lg:rounded-[38px]">
-              <div className="min-w-0 p-5 text-white sm:p-8 md:p-12">
+            <div className="w-full min-w-0 overflow-hidden rounded-[24px] bg-brand-navy shadow-glow sm:rounded-[32px] lg:grid lg:grid-cols-[0.92fr_1.08fr] lg:rounded-[38px]">
+              <div className="w-full min-w-0 px-4 py-8 text-white sm:p-8 md:p-12">
                 <span className="eyebrow border-white/10 bg-white/5 text-brand-pearl">Contacto</span>
-                <h2 className="mt-5 max-w-full break-words font-serif text-[1.85rem] leading-[1.08] [font-family:var(--font-heading)] sm:text-5xl">
+                <h2 className="mt-5 max-w-full break-words font-serif text-[1.75rem] leading-[1.1] [font-family:var(--font-heading)] min-[390px]:text-[2rem] sm:text-5xl">
                   Solicite asesoría legal con A&A Law Firm.
                 </h2>
                 <p className="mt-5 max-w-full break-words text-sm leading-7 text-white/90 sm:text-base">
                   Indique el servicio de interés y una breve descripción de su caso para orientar la solicitud de contacto.
                 </p>
 
-                <div className="mt-7 grid gap-3 text-sm leading-6 text-white/90">
+                <div className="mt-7 grid w-full min-w-0 gap-3 text-[0.92rem] leading-6 text-white/90 sm:text-sm">
                   <p className="min-w-0 break-words">
                     <span className="font-semibold text-brand-gold">WhatsApp:</span> {site.phoneDisplay}
                   </p>
@@ -488,7 +488,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="mt-7 rounded-[22px] border border-white/10 bg-white/5 p-4 sm:p-5">
-                  <p className="text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-brand-gold/90 sm:text-xs sm:tracking-[0.28em]">
+                  <p className="text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-brand-gold/90 sm:text-xs sm:tracking-[0.28em]">
                     Enfoque de la firma
                   </p>
                   <p className="mt-4 break-words text-sm leading-7 text-white/88 sm:text-lg sm:leading-8">
@@ -497,7 +497,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="min-w-0 bg-white p-5 sm:p-8 md:p-12">
+              <div className="w-full min-w-0 bg-white px-4 py-8 sm:p-8 md:p-12">
                 <ContactForm />
               </div>
             </div>

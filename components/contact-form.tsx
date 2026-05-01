@@ -45,9 +45,9 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="grid min-w-0 gap-4" aria-label="Formulario de contacto A&A Law Firm">
-      <div className="grid min-w-0 gap-4 sm:grid-cols-2">
-        <label className="grid min-w-0 gap-2">
+    <form onSubmit={handleSubmit} className="grid w-full min-w-0 gap-4" aria-label="Formulario de contacto A&A Law Firm">
+      <div className="grid w-full min-w-0 gap-4 sm:grid-cols-2">
+        <label className="grid w-full min-w-0 gap-2">
           <span className="text-sm font-semibold text-brand-navy">Nombre</span>
           <input
             type="text"
@@ -57,7 +57,7 @@ export function ContactForm() {
             className="h-12 w-full min-w-0 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
           />
         </label>
-        <label className="grid min-w-0 gap-2">
+        <label className="grid w-full min-w-0 gap-2">
           <span className="text-sm font-semibold text-brand-navy">Teléfono / WhatsApp</span>
           <input
             type="tel"
@@ -69,8 +69,8 @@ export function ContactForm() {
         </label>
       </div>
 
-      <div className="grid min-w-0 gap-4 sm:grid-cols-2">
-        <label className="grid min-w-0 gap-2">
+      <div className="grid w-full min-w-0 gap-4 sm:grid-cols-2">
+        <label className="grid w-full min-w-0 gap-2">
           <span className="text-sm font-semibold text-brand-navy">Correo</span>
           <input
             type="email"
@@ -80,7 +80,7 @@ export function ContactForm() {
             className="h-12 w-full min-w-0 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
           />
         </label>
-        <label className="grid min-w-0 gap-2">
+        <label className="grid w-full min-w-0 gap-2">
           <span className="text-sm font-semibold text-brand-navy">Servicio de interés</span>
           <select
             name="service"
@@ -100,17 +100,17 @@ export function ContactForm() {
         </label>
       </div>
 
-      <label className="grid min-w-0 gap-2">
+      <label className="grid w-full min-w-0 gap-2">
         <span className="text-sm font-semibold text-brand-navy">Mensaje</span>
         <textarea
           name="message"
           rows={5}
           required
-          className="w-full min-w-0 rounded-2xl border border-brand-pearl bg-white px-4 py-3 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
+          className="w-full min-w-0 resize-y rounded-2xl border border-brand-pearl bg-white px-4 py-3 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
         />
       </label>
 
-      <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex w-full min-w-0 flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
         <button
           type="submit"
           className="inline-flex w-full items-center justify-center rounded-full bg-brand-navy px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-slate sm:w-auto"

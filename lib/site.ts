@@ -27,13 +27,13 @@ export const site = {
 export const trustPoints = [
   "Más de 10 años de experiencia",
   "Estructuración empresarial y cumplimiento regulatorio",
-  "Acompañamiento para operar en Panamá"
+  "Acompañamiento legal en Panamá"
 ];
 
 export const metrics = [
   { value: "+10", label: "años de experiencia" },
   { value: "9", label: "servicios legales principales" },
-  { value: "PA", label: "enfoque legal en Panamá" }
+  { value: "Panamá", label: "enfoque de operación" }
 ];
 
 export const credibilityPoints = [
