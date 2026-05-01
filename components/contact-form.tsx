@@ -45,51 +45,51 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="grid gap-4">
+    <form onSubmit={handleSubmit} className="grid gap-4" aria-label="Formulario de contacto A&A Law Firm">
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="grid gap-2">
-          <span className="text-sm font-medium text-brand-navy">Nombre</span>
+          <span className="text-sm font-semibold text-brand-navy">Nombre</span>
           <input
             type="text"
             name="name"
             required
-            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold"
-            placeholder="Su nombre"
+            autoComplete="name"
+            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
           />
         </label>
         <label className="grid gap-2">
-          <span className="text-sm font-medium text-brand-navy">Teléfono / WhatsApp</span>
+          <span className="text-sm font-semibold text-brand-navy">Teléfono / WhatsApp</span>
           <input
             type="tel"
             name="phone"
             required
-            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold"
-            placeholder="Ej. +507 6000-0000"
+            autoComplete="tel"
+            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
           />
         </label>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="grid gap-2">
-          <span className="text-sm font-medium text-brand-navy">Correo</span>
+          <span className="text-sm font-semibold text-brand-navy">Correo</span>
           <input
             type="email"
             name="email"
             required
-            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold"
-            placeholder="correo@empresa.com"
+            autoComplete="email"
+            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
           />
         </label>
         <label className="grid gap-2">
-          <span className="text-sm font-medium text-brand-navy">Servicio de interés</span>
+          <span className="text-sm font-semibold text-brand-navy">Servicio de interés</span>
           <select
             name="service"
             required
-            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold"
+            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
             defaultValue=""
           >
             <option value="" disabled>
-              Seleccione un servicio
+              Elegir servicio legal
             </option>
             {services.map((item) => (
               <option key={item} value={item}>
@@ -101,31 +101,34 @@ export function ContactForm() {
       </div>
 
       <label className="grid gap-2">
-        <span className="text-sm font-medium text-brand-navy">Mensaje</span>
+        <span className="text-sm font-semibold text-brand-navy">Mensaje</span>
         <textarea
           name="message"
           rows={5}
           required
-          className="rounded-2xl border border-brand-pearl bg-white px-4 py-3 text-sm text-brand-navy outline-none transition focus:border-brand-gold"
-          placeholder="Cuéntenos brevemente su necesidad legal"
+          className="rounded-2xl border border-brand-pearl bg-white px-4 py-3 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
         />
       </label>
 
       <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
         <button
           type="submit"
-          className="inline-flex items-center justify-center rounded-full bg-brand-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-slate"
+          className="inline-flex w-full items-center justify-center rounded-full bg-brand-navy px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-slate sm:w-auto"
         >
           Enviar por WhatsApp
         </button>
         <p className="text-sm leading-6 text-brand-slate">
-          También puede escribirnos a <span className="font-medium text-brand-navy">{site.email}</span>
+          Correo de contacto: <span className="font-semibold text-brand-navy">{site.email}</span>
         </p>
       </div>
 
+      <p className="rounded-2xl border border-brand-pearl/70 bg-brand-ivory px-4 py-3 text-xs leading-6 text-brand-slate">
+        La información enviada se utilizará únicamente para orientar la solicitud de contacto.
+      </p>
+
       {submitted ? (
-        <p className="rounded-2xl border border-brand-gold/30 bg-brand-ivory px-4 py-3 text-sm text-brand-navy">
-          Hemos preparado su mensaje para WhatsApp. Revise el contenido y envíelo para iniciar la conversación.
+        <p className="rounded-2xl border border-brand-gold/30 bg-brand-gold/10 px-4 py-3 text-sm text-brand-navy">
+          El mensaje fue preparado en WhatsApp. Revise los datos y envíelo para iniciar la conversación.
         </p>
       ) : null}
     </form>

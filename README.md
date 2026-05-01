@@ -9,7 +9,7 @@ Landing page desarrollada en **Next.js + TypeScript + Tailwind CSS + Framer Moti
 - Sección completa de servicios legales.
 - CTA a WhatsApp.
 - Formulario que prepara el mensaje y lo envía a WhatsApp.
-- FAQ orientado a SEO inicial.
+- FAQ con preguntas frecuentes sobre servicios legales principales.
 - Metadata SEO, sitemap y robots.
 - Assets visuales y logo incluidos dentro del proyecto.
 

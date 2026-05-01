@@ -19,22 +19,22 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 32);
+    const onScroll = () => setScrolled(window.scrollY > 28);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
+    <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 lg:px-8">
       <div
-        className={`mx-auto flex max-w-7xl items-center justify-between rounded-full border px-4 py-3 transition-all duration-300 sm:px-6 ${
+        className={`mx-auto flex max-w-7xl items-center justify-between rounded-full border px-3 py-2.5 transition-all duration-300 sm:px-5 sm:py-3 ${
           scrolled
-            ? "border-brand-pearl/80 bg-white/90 shadow-soft backdrop-blur"
-            : "border-white/10 bg-brand-navy/20 backdrop-blur-md"
+            ? "border-brand-pearl/100 bg-white/90 shadow-soft backdrop-blur"
+            : "border-white/10 bg-brand-navy/30 backdrop-blur-md"
         }`}
       >
-        <Link href="#inicio" className="relative h-11 w-36 shrink-0 sm:h-12 sm:w-44">
+        <Link href="#inicio" className="relative h-10 w-32 shrink-0 sm:h-12 sm:w-44">
           <Image
             src={scrolled ? "/brand/logo-navy.png" : "/brand/logo-gold.png"}
             alt="A&A Law Firm"
@@ -44,7 +44,7 @@ export function Navbar() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex xl:gap-7">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -73,7 +73,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className={`inline-flex h-11 w-11 items-center justify-center rounded-full lg:hidden ${
+          className={`inline-flex h-10 w-10 items-center justify-center rounded-full lg:hidden ${
             scrolled ? "bg-brand-navy text-white" : "bg-white/10 text-white"
           }`}
           onClick={() => setOpen((value) => !value)}
@@ -84,8 +84,8 @@ export function Navbar() {
       </div>
 
       {open ? (
-        <div className="mx-auto mt-3 max-w-7xl rounded-[26px] border border-brand-pearl/70 bg-white p-4 shadow-soft lg:hidden">
-          <nav className="flex flex-col gap-2">
+        <div className="mx-auto mt-3 max-w-7xl rounded-[24px] border border-brand-pearl/70 bg-white p-3 shadow-soft lg:hidden">
+          <nav className="flex flex-col gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}
