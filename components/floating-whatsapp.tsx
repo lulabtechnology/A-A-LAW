@@ -11,7 +11,7 @@ export function FloatingWhatsApp() {
       target="_blank"
       rel="noreferrer"
       aria-label="Escribir por WhatsApp"
-      className="fixed bottom-5 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand-navy text-white shadow-soft transition hover:scale-105 hover:bg-brand-slate sm:bottom-8 sm:right-8"
+      className="fixed bottom-8 right-8 z-40 hidden h-14 w-14 items-center justify-center rounded-full bg-brand-navy text-white shadow-soft transition hover:scale-105 hover:bg-brand-slate sm:inline-flex"
     >
       <MessageCircleMore size={24} />
     </Link>

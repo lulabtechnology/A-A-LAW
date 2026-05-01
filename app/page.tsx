@@ -459,43 +459,45 @@ export default function HomePage() {
       <section id="contacto" className="section-padding pb-20">
         <div className="site-container">
           <AnimatedSection>
-            <div className="grid overflow-hidden rounded-[28px] bg-brand-navy lg:grid-cols-[0.92fr_1.08fr] lg:rounded-[38px]">
-              <div className="p-6 text-white sm:p-8 md:p-12">
+            <div className="overflow-hidden rounded-[28px] bg-brand-navy shadow-glow lg:grid lg:grid-cols-[0.92fr_1.08fr] lg:rounded-[38px]">
+              <div className="min-w-0 p-5 text-white sm:p-8 md:p-12">
                 <span className="eyebrow border-white/10 bg-white/5 text-brand-pearl">Contacto</span>
-                <h2 className="mt-6 font-serif text-3xl leading-tight [font-family:var(--font-heading)] sm:text-5xl">
-                  Cuéntenos su necesidad legal y definamos la mejor ruta para avanzar.
+                <h2 className="mt-5 max-w-full break-words font-serif text-[1.85rem] leading-[1.08] [font-family:var(--font-heading)] sm:text-5xl">
+                  Solicite asesoría legal con A&A Law Firm.
                 </h2>
-                <p className="mt-6 text-base leading-7 text-white/100">
-                  Puede escribirnos por WhatsApp o completar el formulario indicando el servicio de interés y una breve descripción de su caso.
+                <p className="mt-5 max-w-full break-words text-sm leading-7 text-white/90 sm:text-base">
+                  Indique el servicio de interés y una breve descripción de su caso para orientar la solicitud de contacto.
                 </p>
 
-                <div className="mt-8 space-y-4 text-sm leading-7 text-white/100">
-                  <p>
+                <div className="mt-7 grid gap-3 text-sm leading-6 text-white/90">
+                  <p className="min-w-0 break-words">
                     <span className="font-semibold text-brand-gold">WhatsApp:</span> {site.phoneDisplay}
                   </p>
-                  <p>
+                  <p className="min-w-0 break-words">
                     <span className="font-semibold text-brand-gold">Correo:</span> {site.email}
                   </p>
-                  <p>
+                  <p className="min-w-0 break-words">
                     <span className="font-semibold text-brand-gold">Dirección:</span> {site.address}
                   </p>
-                  <p>
+                  <p className="min-w-0 break-words">
                     <span className="font-semibold text-brand-gold">Horario:</span> {site.hours}
                   </p>
-                  <p>
+                  <p className="min-w-0 break-words">
                     <span className="font-semibold text-brand-gold">Instagram:</span> {site.instagramHandle}
                   </p>
                 </div>
 
-                <div className="mt-8 rounded-[24px] border border-white/10 bg-white/5 p-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-gold/90">
+                <div className="mt-7 rounded-[22px] border border-white/10 bg-white/5 p-4 sm:p-5">
+                  <p className="text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-brand-gold/90 sm:text-xs sm:tracking-[0.28em]">
                     Enfoque de la firma
                   </p>
-                  <p className="mt-4 text-base leading-8 text-white/90 sm:text-lg">{site.centralMessage}</p>
+                  <p className="mt-4 break-words text-sm leading-7 text-white/88 sm:text-lg sm:leading-8">
+                    {site.centralMessage}
+                  </p>
                 </div>
               </div>
 
-              <div className="bg-white p-6 sm:p-8 md:p-12">
+              <div className="min-w-0 bg-white p-5 sm:p-8 md:p-12">
                 <ContactForm />
               </div>
             </div>

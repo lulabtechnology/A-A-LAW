@@ -45,47 +45,47 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="grid gap-4" aria-label="Formulario de contacto A&A Law Firm">
-      <div className="grid gap-4 sm:grid-cols-2">
-        <label className="grid gap-2">
+    <form onSubmit={handleSubmit} className="grid min-w-0 gap-4" aria-label="Formulario de contacto A&A Law Firm">
+      <div className="grid min-w-0 gap-4 sm:grid-cols-2">
+        <label className="grid min-w-0 gap-2">
           <span className="text-sm font-semibold text-brand-navy">Nombre</span>
           <input
             type="text"
             name="name"
             required
             autoComplete="name"
-            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
+            className="h-12 w-full min-w-0 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
           />
         </label>
-        <label className="grid gap-2">
+        <label className="grid min-w-0 gap-2">
           <span className="text-sm font-semibold text-brand-navy">Teléfono / WhatsApp</span>
           <input
             type="tel"
             name="phone"
             required
             autoComplete="tel"
-            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
+            className="h-12 w-full min-w-0 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
           />
         </label>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <label className="grid gap-2">
+      <div className="grid min-w-0 gap-4 sm:grid-cols-2">
+        <label className="grid min-w-0 gap-2">
           <span className="text-sm font-semibold text-brand-navy">Correo</span>
           <input
             type="email"
             name="email"
             required
             autoComplete="email"
-            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
+            className="h-12 w-full min-w-0 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
           />
         </label>
-        <label className="grid gap-2">
+        <label className="grid min-w-0 gap-2">
           <span className="text-sm font-semibold text-brand-navy">Servicio de interés</span>
           <select
             name="service"
             required
-            className="h-12 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
+            className="h-12 w-full min-w-0 rounded-2xl border border-brand-pearl bg-white px-4 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
             defaultValue=""
           >
             <option value="" disabled>
@@ -100,13 +100,13 @@ export function ContactForm() {
         </label>
       </div>
 
-      <label className="grid gap-2">
+      <label className="grid min-w-0 gap-2">
         <span className="text-sm font-semibold text-brand-navy">Mensaje</span>
         <textarea
           name="message"
           rows={5}
           required
-          className="rounded-2xl border border-brand-pearl bg-white px-4 py-3 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
+          className="w-full min-w-0 rounded-2xl border border-brand-pearl bg-white px-4 py-3 text-sm text-brand-navy outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20"
         />
       </label>
 
@@ -117,12 +117,12 @@ export function ContactForm() {
         >
           Enviar por WhatsApp
         </button>
-        <p className="text-sm leading-6 text-brand-slate">
+        <p className="min-w-0 break-words text-sm leading-6 text-brand-slate">
           Correo de contacto: <span className="font-semibold text-brand-navy">{site.email}</span>
         </p>
       </div>
 
-      <p className="rounded-2xl border border-brand-pearl/70 bg-brand-ivory px-4 py-3 text-xs leading-6 text-brand-slate">
+      <p className="rounded-2xl border border-brand-pearl/70 bg-brand-ivory px-4 py-3 text-xs leading-6 text-brand-slate break-words">
         La información enviada se utilizará únicamente para orientar la solicitud de contacto.
       </p>
 

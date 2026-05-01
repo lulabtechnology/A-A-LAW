@@ -18,6 +18,23 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
 ::selection {
   background: rgba(203, 170, 139, 0.38);
   color: #283849;
