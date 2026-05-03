@@ -3,13 +3,17 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aalawfirmpa.com"),
-  title: "A&A Law Firm | Asesoría legal estratégica en Panamá",
+  title: "A&A Law Firm | Strategic legal counsel in Panama",
   description:
-    "Firma legal en Panamá especializada en estructuración empresarial, cumplimiento regulatorio, registros, permisos, migración, marcas y servicios marítimos.",
+    "Legal firm in Panama focused on business structuring, regulatory compliance, migration, relocation, company incorporation, trademarks, permits and maritime services.",
   applicationName: "A&A Law Firm",
   keywords: [
     "abogados en Panamá",
+    "law firm Panama",
+    "relocation Panama",
+    "friendly nations visa Panama",
     "constitución de empresas Panamá",
+    "company incorporation Panama",
     "registro sanitario Panamá",
     "registro de marca Panamá",
     "visa países amigos Panamá",
@@ -19,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "A&A Law Firm",
     description:
-      "Asesoría legal estratégica para estructurar, cumplir y operar correctamente en Panamá.",
+      "Strategic legal counsel to move, build and operate in Panama legally and strategically.",
     type: "website",
     url: "https://aalawfirmpa.com",
     siteName: "A&A Law Firm"

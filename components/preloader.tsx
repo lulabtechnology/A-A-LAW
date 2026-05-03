@@ -29,7 +29,7 @@ export function Preloader() {
             className="absolute inset-0 flex items-center justify-center"
           >
             <Image
-              src="/brand/logo-stacked-gold.png"
+              src="/brand/logo-stacked-white.png"
               alt=""
               width={720}
               height={765}
@@ -46,7 +46,7 @@ export function Preloader() {
               className="relative h-36 w-36 sm:h-48 sm:w-48"
             >
               <Image
-                src="/brand/logo-stacked-gold.png"
+                src="/brand/logo-stacked-white.png"
                 alt="A&A Law Firm"
                 fill
                 className="object-contain"
@@ -58,16 +58,16 @@ export function Preloader() {
               initial={{ width: 0, opacity: 0 }}
               animate={{ width: "9rem", opacity: 1 }}
               transition={{ duration: 0.95, ease: "easeInOut", delay: 0.16 }}
-              className="h-px bg-gradient-to-r from-transparent via-brand-gold to-transparent"
+              className="h-px bg-gradient-to-r from-transparent via-brand-mist to-transparent"
             />
 
             <motion.p
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.52, delay: 0.46 }}
-              className="max-w-sm text-[0.65rem] uppercase tracking-[0.24em] text-brand-pearl/85 sm:text-xs"
+              className="max-w-sm text-[0.65rem] uppercase tracking-[0.24em] text-brand-pearl/90 sm:text-xs"
             >
-              Soluciones legales estratégicas en Panamá
+              Panamá · Legal Strategy
             </motion.p>
           </div>
         </motion.div>

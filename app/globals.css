@@ -59,7 +59,7 @@ span {
 }
 
 ::selection {
-  background: rgba(203, 170, 139, 0.38);
+  background: rgba(189, 197, 212, 0.55);
   color: #283849;
 }
 
@@ -82,7 +82,7 @@ span {
   }
 
   .eyebrow {
-    @apply inline-flex max-w-full items-center gap-2 rounded-full border border-brand-gold/25 bg-white/75 px-3.5 py-2 text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-brand-slate backdrop-blur sm:px-4 sm:text-xs sm:tracking-[0.22em];
+    @apply inline-flex max-w-full items-center gap-2 rounded-full border border-brand-mist/25 bg-white/75 px-3.5 py-2 text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-brand-slate backdrop-blur sm:px-4 sm:text-xs sm:tracking-[0.22em];
   }
 
   .section-title {
@@ -102,6 +102,6 @@ span {
   }
 
   .gold-divider {
-    @apply h-px w-24 bg-gradient-to-r from-brand-gold via-brand-gold/70 to-transparent;
+    @apply h-px w-24 bg-gradient-to-r from-brand-mist via-brand-pearl to-transparent;
   }
 }
