@@ -67,7 +67,7 @@ export const pageText = {
       "Acompañamiento legal en Panamá"
     ],
     heroPanelEyebrow: "Atención estratégica",
-    heroPanelTitle: "Para personas y negocios que necesitan operar con estructura legal correcta.",
+    heroPanelTitle: "Para personas y negocios que necesitan operar con estructura legal acorde a la legislación panameña.",
     heroPanelText:
       "La asesoría se enfoca en residencia, formalización, permisos, registros, protección de activos y cumplimiento regulatorio en Panamá.",
     heroPanelItems: [
@@ -121,7 +121,7 @@ export const pageText = {
     relocationPrimary: "I want to move to Panama",
     relocationSecondary: "I want to start a business in Panama",
     strategyEyebrow: "Enfoque estratégico",
-    strategyTitle: "Diseñamos la ruta legal correcta para cada etapa de la operación.",
+    strategyTitle: "Diseñamos la ruta legal idónea para cada etapa de la operación.",
     strategyText:
       "El trabajo legal se aborda desde la estructura, el cumplimiento y la prevención de riesgos para que cada proceso tenga sentido dentro del negocio o plan de establecimiento en Panamá.",
     servicesEyebrow: "Servicios legales",
@@ -214,7 +214,7 @@ export const pageText = {
       "Legal support in Panama"
     ],
     heroPanelEyebrow: "Strategic guidance",
-    heroPanelTitle: "For people and businesses that need the right legal structure to operate.",
+    heroPanelTitle: "For individuals and businesses that need to operate with a legal structure aligned with Panamanian law.",
     heroPanelText:
       "Our legal support focuses on residence, formalization, permits, registrations, asset protection and regulatory compliance in Panama.",
     heroPanelItems: [
@@ -268,7 +268,7 @@ export const pageText = {
     relocationPrimary: "I want to move to Panama",
     relocationSecondary: "I want to start a business in Panama",
     strategyEyebrow: "Strategic approach",
-    strategyTitle: "We design the right legal path for each stage of the operation.",
+    strategyTitle: "We design the appropriate legal path for each stage of the operation.",
     strategyText:
       "Legal work is addressed through structure, compliance and risk prevention so each process makes sense within the business or relocation plan in Panama.",
     servicesEyebrow: "Legal services",
@@ -370,9 +370,9 @@ export const services = {
       bullets: ["Licencias para restaurantes y negocios", "Certificación de plantas de alimentos", "BPM y cumplimiento sanitario", "Preparación para inspecciones"]
     },
     {
-      title: "Permisos para Restaurantes",
-      description: "Estructuración de permisos esenciales para negocios gastronómicos que necesitan operar de forma completa.",
-      bullets: ["Licencias municipales", "Permisos de bomberos", "Uso de suelo", "Estructuración completa del negocio"]
+      title: "Permisos para Cafeterías/Restaurantes y Negocios Afines",
+      description: "Estructuración de permisos esenciales para cafeterías, restaurantes y negocios afines que necesitan operar de forma completa, incluyendo licencia de licores y permiso de discoteca cuando aplique.",
+      bullets: ["Licencias municipales", "Permisos de bomberos", "Uso de suelo", "Licencia de licores", "Permiso de discoteca", "Estructuración completa del negocio"]
     },
     {
       title: "Registro de Marca",
@@ -417,9 +417,9 @@ export const services = {
       bullets: ["Licenses for restaurants and businesses", "Food plant certification", "BPM and sanitary compliance", "Inspection preparation"]
     },
     {
-      title: "Permits for Restaurants",
-      description: "Structuring of essential permits for food service businesses that need to operate completely.",
-      bullets: ["Municipal licenses", "Fire department permits", "Land use", "Complete business structuring"]
+      title: "Permits for Cafeterias/Restaurants and Related Businesses",
+      description: "Structuring of essential permits for cafeterias, restaurants and related businesses that need to operate completely, including liquor licenses and discotheque permits when applicable.",
+      bullets: ["Municipal licenses", "Fire department permits", "Land use", "Liquor license", "Discotheque permit", "Complete business structuring"]
     },
     {
       title: "Trademark Registration",
@@ -462,7 +462,7 @@ export const faqItems = {
     { question: "¿Qué necesito para constituir una empresa en Panamá?", answer: "Se debe revisar la actividad, la estructura legal empresarial, los requisitos para iniciar operaciones y las medidas de protección de activos que correspondan al caso." },
     { question: "¿Qué es el Aviso de Operaciones?", answer: "Es un trámite necesario para formalizar el inicio de actividades comerciales. Puede complementarse con inscripción fiscal y otros requisitos según el tipo de negocio." },
     { question: "¿Cuándo un producto necesita registro sanitario?", answer: "Alimentos, bebidas, cosméticos y otros productos regulados pueden requerir registro sanitario, revisión de etiquetas y gestión ante el MINSA." },
-    { question: "¿Qué permisos necesita un restaurante para operar?", answer: "Puede requerir licencias municipales, permisos de bomberos, uso de suelo, licencias sanitarias y una estructura completa del negocio." },
+    { question: "¿Qué permisos necesita una cafetería, restaurante o negocio afín para operar?", answer: "Puede requerir licencias municipales, permisos de bomberos, uso de suelo, licencias sanitarias, licencia de licores, permiso de discoteca y una estructura completa del negocio, según aplique." },
     { question: "¿Por qué conviene registrar una marca?", answer: "El registro ayuda a proteger activos comerciales, revisar disponibilidad y prevenir conflictos relacionados con el uso de la marca." },
     { question: "¿Atienden procesos de migración y residencia?", answer: "Sí. La firma acompaña procesos como Visa de Países Amigos, residencia para inversionistas y estructuras migratorias vinculadas a negocios." },
     { question: "¿Ofrecen asesoría para registro de naves?", answer: "Sí. La firma asesora en registro de embarcaciones, abanderamiento de naves, servicios marítimos y estructuras de propiedad de activos marítimos." },
@@ -472,7 +472,7 @@ export const faqItems = {
     { question: "What do I need to incorporate a company in Panama?", answer: "The business activity, legal structure, operating requirements and applicable asset protection measures should be reviewed according to the case." },
     { question: "What is the Notice of Operations?", answer: "It is a required procedure to formalize the beginning of commercial activities. It may be complemented with tax registration and other requirements depending on the business type." },
     { question: "When does a product need sanitary registration?", answer: "Food, beverages, cosmetics and other regulated products may require sanitary registration, label review and management before MINSA." },
-    { question: "What permits does a restaurant need to operate?", answer: "It may require municipal licenses, fire department permits, land use, sanitary licenses and a complete business structure." },
+    { question: "What permits does a cafeteria, restaurant or related business need to operate?", answer: "It may require municipal licenses, fire department permits, land use, sanitary licenses, liquor licenses, discotheque permits and a complete business structure, depending on the case." },
     { question: "Why should I register a trademark?", answer: "Registration helps protect commercial assets, review availability and prevent conflicts related to the use of the brand." },
     { question: "Do you support migration and residence processes?", answer: "Yes. The firm supports processes such as Friendly Nations Visa, residence for investors and migration structures connected to business plans." },
     { question: "Do you provide guidance for vessel registration?", answer: "Yes. The firm advises on vessel registration, vessel flagging, maritime services and ownership structures for maritime assets." },
