@@ -370,7 +370,7 @@ export const services = {
       bullets: ["Licencias para restaurantes y negocios", "Certificación de plantas de alimentos", "BPM y cumplimiento sanitario", "Preparación para inspecciones"]
     },
     {
-      title: "Permisos para Cafeterías/Restaurantes y Negocios Afines",
+      title: "Permisos para Cafeterías Restaurantes y Negocios Afines",
       description: "Estructuración de permisos esenciales para cafeterías, restaurantes y negocios afines que necesitan operar de forma completa, incluyendo licencia de licores y permiso de discoteca cuando aplique.",
       bullets: ["Licencias municipales", "Permisos de bomberos", "Uso de suelo", "Licencia de licores", "Permiso de discoteca", "Estructuración completa del negocio"]
     },
@@ -417,7 +417,7 @@ export const services = {
       bullets: ["Licenses for restaurants and businesses", "Food plant certification", "BPM and sanitary compliance", "Inspection preparation"]
     },
     {
-      title: "Permits for Cafeterias/Restaurants and Related Businesses",
+      title: "Permits for Cafeterias Restaurants and Related Businesses",
       description: "Structuring of essential permits for cafeterias, restaurants and related businesses that need to operate completely, including liquor licenses and discotheque permits when applicable.",
       bullets: ["Municipal licenses", "Fire department permits", "Land use", "Liquor license", "Discotheque permit", "Complete business structuring"]
     },
